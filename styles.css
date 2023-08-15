@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Caveat', cursive;
+
+    
+}
+body{
+ background-image: url("https://wallpapers.com/images/hd/red-sunset-dadicpsu85pdw66r.jpg");
+ background-repeat: no-repeat;
+
+ background-size: cover;
+ 
+}
+.quotebox{
+    background: whitesmoke;
+    width: 100%;
+    max-width: 700px;
+  
+    max-height: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+   transform: translate(-50%,-50%);/*move this element left and upwards by 50% of the computed dimension along the axis"*/
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+    
+}
+.quotebox q{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.quotebox h2{
+font-size: 40px;
+margin-bottom: 40px;
+position: relative;
+}
+h2::after{
+    content: '';
+    width:75px;
+    height: 3px;
+    border-radius: 3px;
+background:   rgb(255,79,0);
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+
+
+}
+.quotebox blockquote{
+font-size: 40px;
+font-weight:bolder;
+
+}
+/*blockquote::before{
+    content: '"';
+
+}
+blockquote::after{
+    content: '"';
+}*/
+.quotebox span{
+    padding: 50px;
+    font-weight: bolder;
+ position : absolute;
+ margin-top: 40px;
+right: 0;
+
+}
+.quotebox span::before {
+    content: '';
+    width: 35px;
+    height: 3px;
+    background:   rgb(255,79,0) ;/*  rgb(23,124,229); */
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quotebox div{
+    width: 100%;
+    margin-top: 50px;
+padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.quotebox div button{
+ 
+    margin-left: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  rgb(255,79,0);
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bolder;
+   
+
+}
+.quotebox div img{
+    width:20px;
+    background: transparent;
+}
+.quotebox div button:nth-child(2){
+    background: white;
+}

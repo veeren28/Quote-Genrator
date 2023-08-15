@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote GEnerator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+        <div class="quotebox">
+      <h2>Quote</h2>
+
+      <q id ="quote">loading...</q>
+      <span id = "author">loading...</span>
+      <div>
+          <button onclick="QuoteGnerator(api_url)">Quote </button>
+          <button onclick="tweet()"><img src="data:image/png;base64,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" alt="">Tweet</button>
+
+        </div>
+        </div>
+ <script>
+  var api_url = "https://api.quotable.io/random";
+  var quote = document.getElementById("quote");
+  var author =  document.getElementById("author");
+  async function QuoteGnerator(url){
+    const response =  await fetch(url);//fetches content
+    var data =  await response.json();
+    quote.innerHTML = data.content;
+author.innerHTML = data.author;
+  }
+  function tweet(){
+    window.open("https://twitter.com/i/flow/login");
+  }
+ 
+ </script>
+</body>
+</html>
